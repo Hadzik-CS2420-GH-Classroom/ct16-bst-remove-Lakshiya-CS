@@ -149,7 +149,7 @@ Node* BinarySearchTree::find_min_(Node* node) const {
     {
         node = node->left;
     }
-    return nullptr;
+    return node;
 }
 
 // =============================================================================
