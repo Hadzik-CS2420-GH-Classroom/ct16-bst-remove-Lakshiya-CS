@@ -228,6 +228,7 @@ Node* BinarySearchTree::remove_(Node* node, int value, bool& removed) {
         node->data = successor->data;
         node->right = remove_(node->right, successor->data, removed);
     }
+    return node;
 
 
 
