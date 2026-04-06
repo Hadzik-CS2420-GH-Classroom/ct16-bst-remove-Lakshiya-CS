@@ -195,7 +195,7 @@ Node* BinarySearchTree::remove_(Node* node, int value, bool& removed) {
         node->left = remove_(node->left, value, removed);
     }
     //   Step 2: if value > node->data, recurse right
-    if (value > node->data)
+    else if (value > node->data)
     {
         node->right = remove_(node->right, value, removed);
     }
